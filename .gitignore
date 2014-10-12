@@ -1,0 +1,14 @@
+Thumbs.db
+desktop.ini
+.DS_Store
+composer.lock
+composer.phar
+vendor/
+nbproject/
+.idea
+.buildpath
+.project
+.settings
+*.tmproj
+*.sublime-project
+*.sublime-workspace
