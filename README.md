@@ -1,5 +1,8 @@
 ## reCAPTCHA v2 PHP Library
 
+[![Build Status](https://travis-ci.org/schnabear/recaptcha.svg?branch=master)](https://travis-ci.org/schnabear/recaptcha)
+[![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-2.png)](http://www.wtfpl.net)
+
 A reCAPTCHA PHP library using v2 API
 
 ## Sample Usage
