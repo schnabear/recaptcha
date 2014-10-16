@@ -18,9 +18,9 @@
  * @link      https://github.com/schnabear/recaptcha
  */
 
-namespace Oz;
+namespace Oz\Recaptcha;
 
-class Recaptcha
+class Captcha
 {
     const ELEMENT_CLASS_NAME = 'g-recaptcha';
     const RESPONSE_FIELD_KEY = 'g-recaptcha-response';

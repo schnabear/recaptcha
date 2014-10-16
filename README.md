@@ -10,17 +10,17 @@ A reCAPTCHA PHP library using v2 API
 ```php
 <?php
 
-use Oz\Recaptcha;
+use Oz\Recaptcha\Captcha;
 
 $sitekey = 'YOUR_PUBLIC_KEY';
 $secret = 'YOUR_PRIVATE_KEY';
 
-$recaptcha = new Recaptcha($sitekey, $secret);
+$captcha = new Captcha($sitekey, $secret);
 
 $is_verified = false;
-if ( isset($_POST[Recaptcha::RESPONSE_FIELD_KEY]) )
+if ( isset($_POST[Captcha::RESPONSE_FIELD_KEY]) )
 {
-    $is_verified = $recaptcha->verify($_POST[Recaptcha::RESPONSE_FIELD_KEY]);
+    $is_verified = $captcha->verify($_POST[Captcha::RESPONSE_FIELD_KEY]);
 }
 ```
 
@@ -29,12 +29,12 @@ if ( isset($_POST[Recaptcha::RESPONSE_FIELD_KEY]) )
 <html>
 <head>
     <title>ReCAPTCHA</title>
-    <script src="<?php echo Recaptcha::SCRIPT_URL ?>"></script>
+    <script src="<?php echo Captcha::SCRIPT_URL ?>"></script>
 </head>
 <body>
     <p>Test Result: <?php echo $is_verified ? '&#12295;' : '&#10005;' ?></p>
     <form method="post" action="#">
-        <?php echo $recaptcha->getHTML() . PHP_EOL ?>
+        <?php echo $captcha->getHTML() . PHP_EOL ?>
         <input type="submit" value="TEST" />
     </form>
 </body>

@@ -1,6 +1,6 @@
 {
     "name": "oz/recaptcha",
-    "description": "reCAPTCHA v2 PHP Library",
+    "description": "reCAPTCHA PHP Library",
     "version": "dev-master",
     "keywords": ["reCAPTCHA", "captcha"],
     "homepage": "https://github.com/schnabear/recaptcha",
@@ -16,11 +16,6 @@
         "ext-curl": "*"
     },
     "autoload": {
-        "psr-4": { "Oz\\": "src/" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+        "psr-4": { "Oz\\Recaptcha\\": "src/" }
     }
 }
